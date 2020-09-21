@@ -14,7 +14,9 @@ new_hash
 end 
 
 def get_english_meaning(emoticon_file,emoticon_string)
-  load_library(emoticon_file)
+  load_library(emoticon_file).each do |key,value|
+    binding.pry 
+  end 
 end 
 
 def get_japanese_emoticon
