@@ -16,7 +16,7 @@ end
 def get_english_meaning(emoticon_file,emoticon_string)
   load_library(emoticon_file).each do |key,value|
     puts key 
-    binding.pry 
+    #binding.pry 
   end 
 end 
 
