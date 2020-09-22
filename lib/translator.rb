@@ -19,9 +19,9 @@ def get_english_meaning(emoticon_file,emoticon_string)
     if value[:japanese] == emoticon_string
       return key 
     else 
-      return sorry_message 
     end 
   end 
+  return sorry_message 
 end 
 
 def get_japanese_emoticon
