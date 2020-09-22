@@ -18,13 +18,13 @@ def get_english_meaning(emoticon_file,emoticon_string)
   load_library(emoticon_file).each do |key,value|
     if value[:japanese] == emoticon_string
       return key 
-    else 
     end 
   end 
   return sorry_message 
 end 
 
 def get_japanese_emoticon(emoticon_file, emoticon_string)
+  load_library(emoticon_file).each do |key,value|
  
 end
 
