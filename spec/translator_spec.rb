@@ -149,7 +149,7 @@ describe "#get_japanese_emoticon" do
   end
 
   it "returns an apology message if the argument is not a known emoticon" do
-    sorry_message = "Sorry, that emoticon was not found"
+    sorry_message = """Sorry, that emoticon was not found"
     expect(get_japanese_emoticon("./lib/emoticons.yml", "$#$%{}*")).to eq(sorry_message)
   end
 
