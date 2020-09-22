@@ -24,7 +24,7 @@ def get_english_meaning(emoticon_file,emoticon_string)
   return sorry_message 
 end 
 
-def get_japanese_emoticon
+def get_japanese_emoticon(emoticon_file, emoticon_string)
  
 end
 
