@@ -14,11 +14,12 @@ new_hash
 end 
 
 def get_english_meaning(emoticon_file,emoticon_string)
+  sorry_message = "Sorry, that emoticon was not found"
   load_library(emoticon_file).each do |key,value|
     if value[:japanese] == emoticon 
       return key 
     else 
-      return 
+      return sorry_message 
     end 
   end 
 end 
